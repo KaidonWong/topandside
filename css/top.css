@@ -25,7 +25,6 @@
   margin-right: 20px;
   padding: 0 15px;
   width: 6%;
-  background-color: #B22222;
   border-radius: 15px;
 }
 .top .nav > div > a {
@@ -38,6 +37,9 @@
 .top .nav > div > a:hover {
   color: #B22222;
   cursor: default;
+}
+.top .nav > div.active {
+  background-color: #B22222;
 }
 .top .background {
   z-index: -2;

@@ -23,7 +23,7 @@
             margin-right: 20px;
             padding: 0 15px;
             width: 6%;
-            background-color: #B22222;
+            
             border-radius: 15px;
             >a{
                 font-size: 2rem;
@@ -35,6 +35,9 @@
                     color: #B22222;
                     cursor: default;
                 }
+            }
+            &.active{
+                background-color: #B22222;
             }
 
         }
