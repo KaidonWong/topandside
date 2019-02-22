@@ -13,21 +13,45 @@
     .nav {
         float: left;
         width: 80%;
-        padding-right: 100px;
+        padding-right: 150px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         >div{
+            position: relative;
+            margin-top:35px;
+            margin-right: 20px;
+            padding: 0 15px;
             width: 6%;
-            font-size: 2rem;
-            font-weight: bold;
-            line-height: 5;
-            text-align: center;
-            &:hover {
-                color: #B22222;
-                cursor: default;
+            background-color: #B22222;
+            border-radius: 15px;
+            >a{
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration: none;
+                outline: none;
+                color: #000;
+                &:hover {
+                    color: #B22222;
+                    cursor: default;
+                }
             }
 
+        }
+    }
+    .background {
+        z-index: -2;
+        position: absolute;
+        top: -100%;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        background-color: #ffffff;
+        &.expand{
+            top: 0;
+            opacity: 1;
         }
     }
 }

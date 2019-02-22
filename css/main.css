@@ -15,4 +15,24 @@ html, body {
   clear: both;
 }
 
+.container .section {
+  width: 100%;
+  background-size: 100% 100%;
+}
+.container .section:nth-of-type(1) {
+  background-image: url(../img/1.jpg);
+}
+.container .section:nth-of-type(2) {
+  background-image: url(../img/2.jpg);
+}
+.container .section:nth-of-type(3) {
+  background-image: url(../img/3.jpg);
+}
+.container .section:nth-of-type(4) {
+  background-image: url(../img/4.jpg);
+}
+.container .section:nth-of-type(5) {
+  background-image: url(../img/5.jpg);
+}
+
 /*# sourceMappingURL=main.css.map */
