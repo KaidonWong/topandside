@@ -1,0 +1,108 @@
+.sidebar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 450px;
+  height: 100%;
+  transition: right 0.5s;
+}
+.sidebar .toggle-button {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.sidebar .toggle-button > div {
+  position: absolute;
+  left: 25px;
+  height: 5px;
+  width: 50px;
+  background-color: #B22222;
+}
+.sidebar .toggle-button > div:nth-of-type(1) {
+  top: 35px;
+}
+.sidebar .toggle-button > div:nth-of-type(2) {
+  top: 50px;
+}
+.sidebar .toggle-button > div:nth-of-type(3) {
+  top: 65px;
+}
+.sidebar .content {
+  overflow: auto;
+  float: left;
+  width: 350px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.sidebar .content .search {
+  margin: 40px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s 0.3s;
+}
+.sidebar .content .search input {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80%;
+  font-size: 2rem;
+}
+.sidebar .content .search i {
+  font-size: 2rem;
+}
+.sidebar .content .search i + div {
+  position: relative;
+  top: -30px;
+  color: #888888;
+  font-size: 2rem;
+}
+.sidebar .content .search.active {
+  opacity: 1;
+  transform: none;
+}
+.sidebar .content .catalog > div {
+  overflow: hidden;
+  position: relative;
+}
+.sidebar .content .catalog > div > div:nth-of-type(1) {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #B22222;
+  transition: left 0.2s ease-out;
+}
+.sidebar .content .catalog > div > div:nth-of-type(2) {
+  position: relative;
+  z-index: 6;
+  font-size: 2rem;
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.sidebar .content .catalog > div > div:nth-of-type(2) i {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+.sidebar .content .catalog > div > div:nth-of-type(2).active {
+  opacity: 1;
+  transform: none;
+}
+.sidebar .content .catalog > div.active > div:nth-of-type(1) {
+  left: 0%;
+}
+.sidebar .content .catalog > div.active > div:nth-of-type(2) {
+  color: #ffffff;
+}
+.sidebar .content .catalog > div.active > div:nth-of-type(2) i {
+  color: #ffffff;
+}
+.sidebar .content .catalog > div:hover {
+  cursor: default;
+}
+
+/*# sourceMappingURL=sidebar.css.map */
